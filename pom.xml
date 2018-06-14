@@ -37,6 +37,12 @@
             <artifactId>spring-aop</artifactId>
             <version>${springframework.version}</version>
         </dependency>
+     <!-- spring-aspects : 5.0.7.RELEASE -->   
+        <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aspects</artifactId>
+		    <version>5.0.7.RELEASE</version>
+		</dependency>
         
         <!-- Hibernate -->
         <dependency>
@@ -80,6 +86,12 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+         <!-- SQL server dependency -->
+         <dependency>
+		    <groupId>com.microsoft.sqlserver</groupId>
+		    <artifactId>mssql-jdbc</artifactId>
+		    <version>6.5.3.jre10-preview</version>
+		</dependency>
          
   </dependencies>
 
@@ -88,6 +100,19 @@
     <finalName>spring-web-customer-tracker</finalName>
 
     <plugins>
+
+		<plugin>
+		    <artifactId>maven-source-plugin</artifactId>
+		    <version>2.4</version>
+		    <executions>
+		        <execution>
+		           <id>attach-sources</id>
+		           <goals>
+		              <goal>jar</goal>
+		           </goals>
+		        </execution>
+		    </executions>
+		</plugin>
 
       <!-- The Compiler Plugin is used to compile the sources of your project. -->
       <plugin>
