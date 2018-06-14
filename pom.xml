@@ -90,7 +90,7 @@
          <dependency>
 		    <groupId>com.microsoft.sqlserver</groupId>
 		    <artifactId>mssql-jdbc</artifactId>
-		    <version>6.5.3.jre10-preview</version>
+		    <version>6.4.0.jre8</version>
 		</dependency>
          
   </dependencies>
